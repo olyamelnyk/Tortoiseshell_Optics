@@ -1,0 +1,279 @@
+/* Universal style */
+
+/* html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+} */
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Banner */
+
+.banner {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 31rem;
+  margin-bottom: 3rem;
+}
+
+.header {
+  width: 100%;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+  top: 1rem;
+  z-index: 1;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.logo-block span {
+  padding-left: 1rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+li {
+  padding-right: 2rem;
+}
+
+.logo img {
+  height: 1.5rem;
+}
+
+.message {
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message span {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  padding: 1.5rem 5rem;
+  background-color: white;
+}
+
+/* Services */
+
+.exams img {
+  width: 3.5rem;
+}
+
+.fittings img,
+.delivery img {
+  width: 5rem;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 5rem;
+}
+
+.service span {
+  text-align: center;
+}
+
+/* About */
+
+.title {
+  width: 8.75rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+}
+
+.title span {
+  color: white;
+  font-weight: bold;
+}
+
+.narrative {
+  padding-top: 1rem;
+}
+
+.about {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.philosophy, .appointments {
+  width: 35%;
+  margin-left: 5%;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: azure;
+}
+
+.copy {
+  padding-left: 1rem;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1024px) {
+
+  .mobile {
+    display: none;
+  }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 1024px) {
+
+  .mobile {
+    display: none;
+  }
+
+  .banner {
+    height: 22rem;
+  }
+
+  .header {
+    top: 0;
+  }
+
+  .message {
+    left: 0;
+    top: 5rem;
+  }
+
+  .message span {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 470px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .banner {
+    height: 17rem;
+    margin-bottom: 3.77rem;
+    background-position: 20%;
+  }
+
+  .header {
+    position: static;
+    width: 100%;
+  }
+
+  .message {
+    top: 9rem;
+  }
+
+  .message span {
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .services {
+    margin-bottom: 2.77rem;
+    font-size: 0.77rem;
+    line-height: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .service {
+    justify-content: space-around;
+    height: 7rem;
+    margin-bottom: 1rem;
+  }
+
+  .philosophy, .appointments {
+    width: 100%;
+    margin: 0;
+  }
+
+  .title {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .narrative p {
+    font-size: 0.77rem;
+    line-height: 1.4;
+    padding: 1rem 0.5rem;
+  }
+
+  .appointments {
+    margin-top: 4rem;
+  }
+
+  .logo-block span,
+  .footer .copy {
+    display: none;
+  }
+
+  footer .logo {
+    margin: 0 auto;
+  }
+
+
+
+}
